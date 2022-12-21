@@ -5,7 +5,7 @@ def puzzles():
     # find the largest sum of values from the groups of values in
     #   'day_1_puzzle_1_input.txt' -> groups of values separated by blank line
     
-    input_file = open("december_01/day_1_puzzle_1_input.txt", "r")
+    input_file = open("advent-of-code-2022/input/day_1_input.txt", "r")
     input_data = input_file.read()
 
     # groups of values are separated by blank line, aka two newlines
