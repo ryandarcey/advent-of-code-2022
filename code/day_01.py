@@ -1,11 +1,17 @@
 # 2022-12-01, day 1
 
+import os
+
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '../input/day_01_input.txt')
+
+
 def puzzles():
     # part 1
     # find the largest sum of values from the groups of values in
     #   'day_1_puzzle_1_input.txt' -> groups of values separated by blank line
     
-    input_file = open("advent-of-code-2022/input/day_1_input.txt", "r")
+    input_file = open(filename, "r")
     input_data = input_file.read()
 
     # groups of values are separated by blank line, aka two newlines

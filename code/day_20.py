@@ -1,12 +1,18 @@
 # 2022-12-20, day 20
 
+import os
+
+dirname = os.path.dirname(__file__)
+filename = os.path.join(dirname, '../input/day_20_input.txt')
+
+
 def puzzles(part=1):
     # part 1
     # "mix" input file:
     #   in the original order that they appear in the input,
     #   move each number a number of spaces in the list according to its value
     
-    input_file = open("/home/ryandarcey/Documents/Advent_of_Code/advent-of-code-2022/input/day_20_input.txt", "r")
+    input_file = open(filename, "r")
     input_data = input_file.read()
 
     # numbers are separated by newline
